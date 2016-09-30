@@ -48,4 +48,15 @@ module Url
         end
     end
     
+    
+    # construct products endpoint of shop
+    def Url.get_products_endpoint(url)
+        if url[-1,1] == '/'
+            url += "products.json?page="
+        else
+        	url += "/products.json?page="
+        end
+        return url
+    end
+    
 end
