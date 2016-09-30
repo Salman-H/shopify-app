@@ -13,4 +13,4 @@ ruby app.rb
 ```
 
 ## example
-<img src="/screenshots/url_prompt_img.PNG" alt="alt text" width="900" height="50">
+<img src="/screenshots/url_prompt_img.PNG" alt="alt text" width="900" height="40">
