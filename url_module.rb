@@ -59,4 +59,15 @@ module Url
         return url
     end
     
+    
+    # get response using HTTParty
+    def Url.read_response(base_url)
+        begin
+            response = HTTParty.get(base_url)
+        rescue => e
+            puts "Rescued #{e.inspect}"
+        end
+        return response
+    end
+    
 end
