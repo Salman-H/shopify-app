@@ -13,5 +13,5 @@ ruby app.rb
 ```
 
 ## example
-![](/screenshots/url_prompt_img_1.PNG)
+![](/screenshots/url_prompt_img.PNG)
 
