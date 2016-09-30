@@ -13,6 +13,20 @@ module Url
         end
     end
     
+    
+    # check if response code is 200 OK
+    def Url.is_status_valid(url)
+        code = HTTParty.get(url).code
+        if  code == 200
+            print_status(code)
+            return true
+        else
+            print_status(code)
+            return false
+        end
+    end
+    
+    
     # print some common http status codes
     def Url.print_status(code)
         case code
