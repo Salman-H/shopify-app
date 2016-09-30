@@ -13,4 +13,5 @@ ruby app.rb
 ```
 
 ## example
-<img src="/screenshots/url_prompt_img.PNG" alt="alt text" width="900" height="40">
+![](/screenshots/url_prompt_img.PNG)
+
