@@ -16,4 +16,23 @@ module Shop
         $products_price_hash = Hash[products_to_find.collect { |product| [product, 0.0] }]
     end
     
+    
+    # for each requested product type finds total price from listed products
+    def Shop.find_prices(products_array)
+        
+        products_array.each do |product|
+            if $products_count_hash.key?(product["product_type"])
+                
+                # count product's occurrence
+                $products_count_hash[product["product_type"]] += 1
+                
+                # add up product's price for all variants
+                variants_array = product["variants"]
+                variants_array.each { |variant|
+                    $products_price_hash[product["product_type"]] += variant["price"].to_f
+                }
+            end
+        end
+    end
+    
 end
