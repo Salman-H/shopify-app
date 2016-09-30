@@ -13,5 +13,4 @@ ruby app.rb
 ```
 
 ## example
-![url prompt](/screenshots/url_prompt_img.PNG)
-Format: ![Alt Text](url)
+<img src="/screenshots/url_prompt_img.PNG" alt="alt text" width="500" height="50">
