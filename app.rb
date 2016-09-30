@@ -19,10 +19,8 @@ Shop.create_price_hash(products_to_find)
 end_of_page = false
 page = 1
 until end_of_page
-    
     base_url = url + page.to_s
     #format :json
-    
     # connect to current base url
     res = Url.read_response(base_url)
     
@@ -35,8 +33,8 @@ until end_of_page
     # check if reached end of json result
     end_of_page = Shop.is_page_end(products_array)
     
-    # iterate over json to count products
-    Shop.count(products_array)
+    # iterate over json to find product prices
+    Shop.find_prices(products_array)
     
     page += 1
 end
