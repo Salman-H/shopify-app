@@ -35,4 +35,11 @@ module Shop
         end
     end
     
+    
+    # check if reached end of json body
+    def Shop.is_page_end(products_array)
+        products_array.length == 0 ? true : false
+    end  
+    
+    
 end
