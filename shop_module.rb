@@ -42,4 +42,14 @@ module Shop
     end  
     
     
+    # sum total price of all products requested
+    def Shop.get_total_price
+        total = 0.0;
+        $products_price_hash.each do |product, price|
+            total += price
+        end
+        return total.round(2)
+    end
+    
+    
 end
