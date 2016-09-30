@@ -52,4 +52,23 @@ module Shop
     end
     
     
+    # print result consisting of frequency and prices of requested products
+    def Shop.print_result
+        puts ""
+        puts "drum roll..."
+        puts ""
+        puts "This Shopify store contains: "
+        
+        $products_count_hash.each do |product, count|
+            if not product.nil?
+                puts count.to_s + " products of type " + product +
+                " worth $" + $products_price_hash[product].round(2).to_s
+            end
+        end
+        puts "------------------------------------------"
+        print "Total price of these products: "
+        puts "$" + get_total_price.to_s
+        puts ""
+    end
+    
 end
