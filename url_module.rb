@@ -70,4 +70,17 @@ module Url
         return response
     end
     
+    
+    # parse response into json and handle parsing errors
+    def Url.parse_response(res)
+        begin
+            res.inspect
+            # per HTTPary docs this also suffices by forcing response to be parsed:
+            json_body = res.parsed_response
+        rescue => e
+            puts "Rescued #{e.inspect}"
+        end
+        return json_body
+    end
+    
 end
