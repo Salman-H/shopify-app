@@ -29,4 +29,17 @@ module Input
         return url
     end
     
+    
+    # prompts user for the number of products they want info on
+    def Input.prompt_num_products
+        num_products = ''
+        loop do
+            puts
+            print "Number of products you want info on: "
+            num_products = gets.chomp
+            break if all_digits(num_products)
+        end
+        return num_products.to_i
+    end
+    
 end
