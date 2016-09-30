@@ -38,3 +38,7 @@ until end_of_page
     
     page += 1
 end
+
+
+# call shop method to print price results of requeste products
+Shop.print_result
