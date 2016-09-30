@@ -42,4 +42,26 @@ module Input
         return num_products.to_i
     end
     
+    
+    # prompts user for names of the product types they want info on
+    def Input.prompt_products_list
+        num_products = prompt_num_products
+        products_to_find = Array.new(num_products)
+        puts
+        puts "NOTE: make sure to enter product types exactly as they are listed in their Shopify store."
+        puts
+        for i in 1..num_products
+        	product = ''
+        	loop do
+        	    print "product #{i}: "
+        	    product = gets.chomp
+            	break if all_letters(product)
+            end
+            products_to_find.push(product)
+        end
+        puts
+        puts "Won't be long..."
+        return products_to_find.uniq
+    end
+    
 end
