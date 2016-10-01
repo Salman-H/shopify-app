@@ -3,10 +3,10 @@ A command line app that can retrieve prices of specified products from any Shopi
 
 ## Usage
 Requires the HTTParty Ruby gem
-![](/screenshots/install_httparty.PNG)
+<img src="/screenshots/install_httparty.PNG" alt="alt text" width="900" height="26">
 
 To run the app
-![](/screenshots/run_app.PNG)
+<img src="/screenshots/run_app.PNG" alt="alt text" width="900" height="26">
 
 ## Demo
 
@@ -30,7 +30,7 @@ This is an example of a bad url:
 <img src="/screenshots/invalid_url_response_1.PNG" alt="alt text" width="900" height="65">
 
 This is an example of entering a url that does not exist:
-<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="93">
+<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="94">
 
 #### valid non-shopify store urls
 Program will continue to prompt for a shopify store url until one is provided.
