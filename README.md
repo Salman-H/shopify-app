@@ -26,11 +26,11 @@ This is the response for above inputs:
 Program will continue to prompt for a shopify store url until one is provided.
 
 This is an example of a bad url:
-<img src="/screenshots/invalid_url_prompt_1.PNG" alt="alt text" width="900" height="30">
-<img src="/screenshots/invalid_url_response_1.PNG" alt="alt text" width="900" height="55">
+<img src="/screenshots/invalid_url_prompt_1.PNG" alt="alt text" width="900" height="26">
+<img src="/screenshots/invalid_url_response_1.PNG" alt="alt text" width="900" height="65">
 
 This is an example of entering a url that does not exist:
-<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="95">
+<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="93">
 
 #### valid non-shopify store urls
 Program will continue to prompt for a shopify store url until one is provided.
