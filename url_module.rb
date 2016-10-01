@@ -29,6 +29,7 @@ module Url
     
     # print some common http status codes
     def Url.print_status(code)
+        puts
         case code
             when 200
                 puts "200 OK"

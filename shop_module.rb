@@ -61,7 +61,7 @@ module Shop
         
         $products_count_hash.each do |product, count|
             if not product.nil?
-                puts count.to_s + " products of type " + product +
+                puts count.to_s + " products for type " + product +
                 " worth $" + $products_price_hash[product].round(2).to_s
             end
         end
