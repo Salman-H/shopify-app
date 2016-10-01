@@ -1,6 +1,10 @@
 # shopify-app
 A command line app that can retrieve prices of specified products from any Shopify store without requiring authorization
 
+> Please note that this is my first program in Ruby. 
+As such, its design might not be optimal for a Ruby program. Nonetheless, I will continue to improve it as I 
+continue to learn more Ruby.
+
 ## Usage
 Requires the HTTParty Ruby gem
 <img src="/screenshots/install_httparty.PNG" alt="alt text" width="900" height="29">
