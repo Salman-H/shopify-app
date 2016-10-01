@@ -34,7 +34,7 @@ This is an example of a bad url:
 <img src="/screenshots/invalid_url_response_1.PNG" alt="alt text" width="900" height="80">
 
 This is an example of entering a url that does not exist:
-<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="60">
+<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="75">
 
 #### valid non-shopify store urls
 Program will continue to prompt for a shopify store url until one is provided.
