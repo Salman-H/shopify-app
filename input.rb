@@ -1,6 +1,6 @@
 $LOAD_PATH << '.'
 
-require 'url_module.rb'
+require 'url.rb'
 
 module Input
     

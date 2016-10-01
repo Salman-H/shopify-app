@@ -1,8 +1,8 @@
 $LOAD_PATH << '.'
 
-require 'shop_module.rb'
-require 'url_module.rb'
-require 'input_module.rb'
+require 'shop.rb'
+require 'url.rb'
+require 'input.rb'
 
 
 # call prompt methods to handle user inputs
