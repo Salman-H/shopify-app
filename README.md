@@ -3,10 +3,10 @@ A command line app that can retrieve prices of specified products from any Shopi
 
 ## Usage
 Requires the HTTParty Ruby gem
-<img src="/screenshots/install_httparty.PNG" alt="alt text" width="900" height="26">
+<img src="/screenshots/install_httparty.PNG" alt="alt text" width="900" height="29">
 
 To run the app
-<img src="/screenshots/run_app.PNG" alt="alt text" width="900" height="26">
+<img src="/screenshots/run_app.PNG" alt="alt text" width="900" height="29">
 
 ## Demo
 
