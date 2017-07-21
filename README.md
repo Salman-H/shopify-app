@@ -1,5 +1,5 @@
 # Shopify App
-A command line app that can retrieve prices of specified products from any Shopify store without requiring authorization
+A command line app that can retrieve prices of specified products from *any* Shopify store *without* requiring authorization
 
 ## Usage
 Requires the HTTParty Ruby gem 
@@ -14,8 +14,6 @@ $ ruby app.rb
 <br>
 
 ## URL input and response
-
-<br>
 
 > URLs of shopify stores
 
@@ -39,7 +37,6 @@ This is the response for above inputs:
 Program will continue to prompt for a shopify store url until one is provided.
 This is an example of a bad url:
 ```Shell
-$ ruby app.rb
 Enter a valid shopify store url: http-blah-blah
 Rescued #<Errno::ECONREFUSED: Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)>
 
@@ -47,7 +44,6 @@ Enter a valid shopify store url:
 ```
 This is an example of entering a url that does not exist: 
 ```Shell
-$ ruby app.rb
 Enter a valid shopify store url: https://www.amazon.ca/products
 
 404 Not Found
@@ -61,7 +57,6 @@ Enter a valid shopify store url:
 
 This is an example of a valid url that does not belong to a shopify store:
 ```Shell
-$ ruby app.rb
 Enter a valid shopify store url: https://github.com/
 
 Enter a valid shopify store url:
@@ -78,13 +73,13 @@ NOTE: make sure to enter product types exactly as they are listed in their Shopi
 ```
 Subsequently, user will be prompted to enter the names of the product types. Program will continue to prompt for name of a product type until a string consisting of all letters plus spaces is entered.
 
-These are two product categories from the Shopify store, **shopicruit**:
+These are two product categories from the Shopify store, [shopicruit](https://shopicruit.myshopify.com):
 ```
 Product 1: Watch
 Product 2: Clock
 ```
 
-These are two product categories from the Shopify store, **raredevice**:
+These are two product categories from the Shopify store, [raredevice](https://raredevice.net/):
 ```
 Product 1: Kids
 Product 2: Living
@@ -99,7 +94,7 @@ that the results are being processed:
 Won't be long...
 ```
 
-This is an example of a result on products for type **Clock** and **Watch** from the Shopify store, **shopicruit**:
+This is an example of a result on products for type **Clock** and **Watch** from the Shopify store, [shopicruit](https://shopicruit.myshopify.com):
 ```
 drum roll...
 
@@ -110,7 +105,7 @@ This Shopify store contains:
 Total price of these products: $2290.74
 ```
 
-This is an example of a result on products for type **Kids** and **Living** from the Shopify store, **raredevice**:
+This is an example of a result on products for type **Kids** and **Living** from the Shopify store, [raredevice](https://raredevice.net/):
 ```
 drum roll...
 
