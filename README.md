@@ -11,13 +11,16 @@ To run the app
 $ ruby app.rb
 ```
 
+<br>
+
 ## URL input and response
 
-*URLs of shopify stores*
+<br>
+
+> URLs of shopify stores
 
 This is an example of a url input for a shopify store:
 ```Shell
-$ ruby app.rb
 Enter a valid shopify store url: http://shopicruit.myshopify.com
 ```
 This is another example of a url input for a shopify store: 
@@ -29,7 +32,9 @@ This is the response for above inputs:
 200 OK
 ```
 
-*Bad URLs*
+<br>
+
+> Bad URLs
 
 Program will continue to prompt for a shopify store url until one is provided.
 This is an example of a bad url:
@@ -50,7 +55,9 @@ Enter a valid shopify store url: https://www.amazon.ca/products
 Enter a valid shopify store url:
 ```
 
-*Valid non-shopify store URLs*
+<br>
+
+> Valid non-shopify store URLs
 
 This is an example of a valid url that does not belong to a shopify store:
 ```Shell
@@ -60,6 +67,7 @@ Enter a valid shopify store url: https://github.com/
 Enter a valid shopify store url:
 ```
 
+<br>
 
 ## Products to find
 If a valid shopify store url was entered, program will prompt for the number of products to find info on:
@@ -81,6 +89,8 @@ These are two product categories from the Shopify store, **raredevice**:
 Product 1: Kids
 Product 2: Living
 ```
+
+<br>
 
 ## Printing results on products
 After user has entered the names of the product types to find info on, program will display a message indicating 
