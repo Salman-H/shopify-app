@@ -1,4 +1,4 @@
-# shopify-app
+# Shopify App
 A command line app that can retrieve prices of specified products from any Shopify store without requiring authorization
 
 ## Usage
@@ -11,9 +11,10 @@ To run the app
 $ ruby app.rb
 ```
 
-## Demo
-### 1. url input and response
-#### A. urls of shopify stores
+## URL input and response
+
+*URLs of shopify stores*
+
 This is an example of a url input for a shopify store:
 ```Shell
 $ ruby app.rb
@@ -27,7 +28,9 @@ This is the response for above inputs:
 ```Shell
 200 OK
 ```
-#### B. bad urls
+
+*Bad URLs*
+
 Program will continue to prompt for a shopify store url until one is provided.
 This is an example of a bad url:
 ```Shell
@@ -46,7 +49,9 @@ Enter a valid shopify store url: https://www.amazon.ca/products
 
 Enter a valid shopify store url:
 ```
-#### C. valid non-shopify store urls
+
+*Valid non-shopify store URLs*
+
 This is an example of a valid url that does not belong to a shopify store:
 ```Shell
 $ ruby app.rb
@@ -55,16 +60,15 @@ Enter a valid shopify store url: https://github.com/
 Enter a valid shopify store url:
 ```
 
-### 2. products to find
+
+## Products to find
 If a valid shopify store url was entered, program will prompt for the number of products to find info on:
 ```
 Number of products you want info on: 2
 
 NOTE: make sure to enter product types exactly as they are listed in their Shopify store.
 ```
-Subsequently, user will be prompted to enter the names of the product types.
-
-Program will continue to prompt for name of a product type until a string consisting of all letters plus spaces is entered.
+Subsequently, user will be prompted to enter the names of the product types. Program will continue to prompt for name of a product type until a string consisting of all letters plus spaces is entered.
 
 These are two product categories from the Shopify store, **shopicruit**:
 ```
@@ -78,7 +82,7 @@ Product 1: Kids
 Product 2: Living
 ```
 
-### 3. printing results on products
+## Printing results on products
 After user has entered the names of the product types to find info on, program will display a message indicating 
 that the results are being processed:
 ```
