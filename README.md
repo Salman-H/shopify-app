@@ -1,67 +1,109 @@
 # shopify-app
 A command line app that can retrieve prices of specified products from any Shopify store without requiring authorization
 
-> Please note that this is my first program in Ruby. 
-As such, its design might not be optimal for a Ruby program. Nonetheless, I will continue to improve it as I 
-continue to learn more Ruby.
-
 ## Usage
-Requires the HTTParty Ruby gem
-<img src="/screenshots/install_httparty.PNG" alt="alt text" width="900" height="29">
-
-To run the app
-<img src="/screenshots/run_app.PNG" alt="alt text" width="900" height="29">
+Requires the HTTParty Ruby gem 
+```Haskell
+$ gem install httparty
+```
+To run the app 
+```Haskell
+$ ruby app.rb
+```
 
 ## Demo
-
 ### 1. url input and response
 #### A. urls of shopify stores
 This is an example of a url input for a shopify store:
-![](/screenshots/valid_url_prompt_1.PNG)
-
-This is another example of a url input for a shopify store:
-![](/screenshots/valid_url_prompt_2.PNG)
-
-This is the response for above inputs:
-![](/screenshots/response_200.PNG)
-
+```Shell
+$ ruby app.rb
+Enter a valid shopify store url: http://shopicruit.myshopify.com
+```
+This is another example of a url input for a shopify store: 
+```Shell
+Enter a valid shopify store url: http://raredevice.net/
+```
+This is the response for above inputs: 
+```Shell
+200 OK
+```
 #### B. bad urls
 Program will continue to prompt for a shopify store url until one is provided.
-
 This is an example of a bad url:
-<img src="/screenshots/invalid_url_prompt_1.PNG" alt="alt text" width="900" height="26">
-<img src="/screenshots/invalid_url_response_1.PNG" alt="alt text" width="900" height="65">
+```Shell
+$ ruby app.rb
+Enter a valid shopify store url: http-blah-blah
+Rescued #<Errno::ECONREFUSED: Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)>
 
-This is an example of entering a url that does not exist:
-<img src="/screenshots/invalid_url_prompt_response_3.PNG" alt="alt text" width="900" height="94">
+Enter a valid shopify store url:
+```
+This is an example of entering a url that does not exist: 
+```Shell
+$ ruby app.rb
+Enter a valid shopify store url: https://www.amazon.ca/products
 
+404 Not Found
+
+Enter a valid shopify store url:
+```
 #### C. valid non-shopify store urls
 This is an example of a valid url that does not belong to a shopify store:
-![](/screenshots/invalid_url_prompt_response_2.PNG)
+```Shell
+$ ruby app.rb
+Enter a valid shopify store url: https://github.com/
+
+Enter a valid shopify store url:
+```
 
 ### 2. products to find
 If a valid shopify store url was entered, program will prompt for the number of products to find info on:
-![](/screenshots/two_product_requests.PNG)
-![](/screenshots/note_valid_product_names.PNG)
+```
+Number of products you want info on: 2
 
+NOTE: make sure to enter product types exactly as they are listed in their Shopify store.
+```
 Subsequently, user will be prompted to enter the names of the product types.
 
 Program will continue to prompt for name of a product type until a string consisting of all letters plus spaces is entered.
 
 These are two product categories from the Shopify store, **shopicruit**:
-![](/screenshots/two_product_names_1.PNG)
+```
+Product 1: Watch
+Product 2: Clock
+```
 
 These are two product categories from the Shopify store, **raredevice**:
-![](/screenshots/two_product_names_2.PNG)
+```
+Product 1: Kids
+Product 2: Living
+```
 
 ### 3. printing results on products
 After user has entered the names of the product types to find info on, program will display a message indicating 
 that the results are being processed:
-![](/screenshots/wont_be_long.PNG)
+```
+Won't be long...
+```
 
 This is an example of a result on products for type **Clock** and **Watch** from the Shopify store, **shopicruit**:
-![](/screenshots/results_1.PNG)
+```
+drum roll...
+
+This Shopify store contains:
+8 products for type Clock worth $1556.4
+5 products for type Watch worth $734.34
+------------------------------------------
+Total price of these products: $2290.74
+```
 
 This is an example of a result on products for type **Kids** and **Living** from the Shopify store, **raredevice**:
-![](/screenshots/results_2.PNG)
+```
+drum roll...
+
+This Shopify store contains:
+42 products for type Kids worth $2754.24
+176 products for type Living worth $26509.13
+------------------------------------------
+Total price of these products: $29263.37
+```
 
